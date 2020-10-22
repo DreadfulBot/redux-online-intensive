@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`posts reducer should handle clear posts 1`] = `Immutable.List []`;
+
+exports[`posts reducer should handle create post 1`] = `
+Immutable.List [
+  Immutable.Map {
+    "id": "59edd93052db76aefs2b36ee",
+    "comment": "test post",
+    "created": 1508760000,
+    "likes": Immutable.List [],
+    "author": Immutable.Map {
+      "id": "TEST_ID",
+      "avatar": "TEST_AVATAR",
+      "firstName": "Walter",
+      "lastName": "White",
+      "token": "TEST_TOKEN",
+    },
+  },
+]
+`;
+
+exports[`posts reducer should handle fill posts 1`] = `
+Immutable.List [
+  Immutable.Map {
+    "id": "59edd93052db76aefs2b36ee",
+    "comment": "test post",
+    "created": 1508760000,
+    "likes": Immutable.List [],
+    "author": Immutable.Map {
+      "id": "TEST_ID",
+      "avatar": "TEST_AVATAR",
+      "firstName": "Walter",
+      "lastName": "White",
+      "token": "TEST_TOKEN",
+    },
+  },
+  Immutable.Map {
+    "id": "59edd93052db76aefs2b36ee",
+    "comment": "test post",
+    "created": 1508760000,
+    "likes": Immutable.List [],
+    "author": Immutable.Map {
+      "id": "TEST_ID",
+      "avatar": "TEST_AVATAR",
+      "firstName": "Walter",
+      "lastName": "White",
+      "token": "TEST_TOKEN",
+    },
+  },
+]
+`;
+
+exports[`posts reducer should handle like post 1`] = `
+Immutable.List [
+  Immutable.Map {
+    "id": "59edd93052db76aefs2b36ee",
+    "comment": "test post",
+    "created": 1508760000,
+    "likes": Immutable.List [
+      Object {
+        "avatar": "TEST_AVATAR",
+        "firstName": "Walter",
+        "id": "TEST_ID",
+        "lastName": "White",
+        "token": "TEST_TOKEN",
+      },
+    ],
+    "author": Immutable.Map {
+      "id": "TEST_ID",
+      "avatar": "TEST_AVATAR",
+      "firstName": "Walter",
+      "lastName": "White",
+      "token": "TEST_TOKEN",
+    },
+  },
+]
+`;
+
+exports[`posts reducer should handle remove post 1`] = `Immutable.List []`;
+
+exports[`posts reducer should handle unlike post 1`] = `
+Immutable.List [
+  Immutable.Map {
+    "id": "59edd93052db76aefs2b36ee",
+    "comment": "test post",
+    "created": 1508760000,
+    "likes": Immutable.List [],
+    "author": Immutable.Map {
+      "id": "TEST_ID",
+      "avatar": "TEST_AVATAR",
+      "firstName": "Walter",
+      "lastName": "White",
+      "token": "TEST_TOKEN",
+    },
+  },
+]
+`;
+
+exports[`posts reducer should return initial state by default 1`] = `Immutable.List []`;

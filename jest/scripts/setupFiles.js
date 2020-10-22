@@ -35,6 +35,26 @@ const credentials = {
     remember: true,
 };
 
+const comment = "test post";
+
+const post = {
+    id:      "59edd93052db76aefs2b36ee",
+    comment,
+    created: 1508760000,
+    likes:   [],
+    author:  userProfile,
+};
+
+const postResponseSuccess = {
+    data:    post,
+    message: successMessage,
+};
+
+const fetchCreatePostSuccess = {
+    status: 200,
+    json:   jest.fn(() => Promise.resolve(postResponseSuccess)),
+};
+
 const responseDataSuccess = {
     data:    userProfile,
     message: successMessage,
@@ -76,6 +96,8 @@ global.__ = {
     errorMessage,
     token,
     error,
+    post,
+    comment,
     responseDataSuccess,
     responseDataSuccessProfiles,
     responseDataFail,
@@ -83,6 +105,7 @@ global.__ = {
     fetchResponseSuccess204,
     fetchResponseFail401,
     fetchResponseFail400,
+    fetchCreatePostSuccess,
     credentials,
     url,
     newName,
